@@ -1,0 +1,29 @@
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+#endif
+
+// Make sure core C headers are included
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+// Make sure EOF is defined
+#ifndef EOF
+#define EOF (-1)
+#endif
+
+// Avoid fdopen redefinition issues
+#ifdef fdopen
+#undef fdopen
+#endif
+
+// Avoid remove redefinition issues
+#ifdef remove
+#undef remove
+#endif
+
+#endif /* PrefixHeader_pch */
