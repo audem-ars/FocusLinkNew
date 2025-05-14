@@ -36,3 +36,26 @@ yarn-error.*
 *.tsbuildinfo
 
 app-example
+
+# CocoaPods
+Pods/
+**/Pods/
+build/
+DerivedData/
+
+# Node / React Native
+node_modules/
+npm-debug.log
+yarn-error.log
+yarn-debug.log
+
+# Android
+android/app/build/
+android/build/
+android/.gradle/
+android/gradle/
+# Add others as needed
+
+# macOS
+.DS_Store
+*.xcuserdatad/
